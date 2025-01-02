@@ -1,5 +1,4 @@
-import React from 'react';
-import { Heart, Search, Bell, Activity } from 'lucide-react';
+import { Heart, Search, Bell, Activity } from "lucide-react";
 
 export function Hero() {
   return (
@@ -18,35 +17,48 @@ export function Hero() {
                 <Activity className="h-4 w-4 mr-2" />
                 <span className="text-sm font-medium">Every Drop Counts</span>
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Give the Gift of
                 <span className="relative">
                   <span className="relative z-10 text-red-600 ml-4">Life</span>
-                  <svg className="absolute -bottom-2 left-0 w-full h-3 text-red-200" viewBox="0 0 100 12" preserveAspectRatio="none">
-                    <path d="M0,0 Q50,12 100,0" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <svg
+                    className="absolute -bottom-2 left-0 w-full h-3 text-red-200"
+                    viewBox="0 0 100 12"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M0,0 Q50,12 100,0"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                      fill="none"
+                    />
                   </svg>
                 </span>
               </h1>
 
               <p className="mt-8 text-xl text-gray-600 leading-relaxed">
-                Join our community of heroes making a difference. One donation can save up to three lives. 
-                Be part of something bigger than yourself.
+                Join our community of heroes making a difference. One donation
+                can save up to three lives. Be part of something bigger than
+                yourself.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <button className="group relative px-8 py-4 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all duration-200 transform hover:-translate-y-1">
+                <a
+                  href="https://frontendraktdaan.vercel.app/login"
+                  className="group relative px-8 py-4 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all duration-200 transform hover:-translate-y-1"
+                >
                   <span className="relative z-10 flex items-center justify-center font-semibold">
                     <Heart className="h-5 w-5 mr-2" />
                     Become a Donor
                   </span>
                   <div className="absolute inset-0 h-full w-full bg-white/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                </button>
-                
+                </a>
+
                 <button className="group relative px-8 py-4 border-2 border-red-600 text-red-600 rounded-xl hover:bg-red-50 transition-all duration-200 transform hover:-translate-y-1">
                   <span className="relative z-10 flex items-center justify-center font-semibold">
                     <Search className="h-5 w-5 mr-2" />
-                    Find Blood Donors
+                    Nearby Blood Banks
                   </span>
                 </button>
               </div>
@@ -76,7 +88,7 @@ export function Hero() {
                   alt="Blood Donation"
                   className="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 />
-                
+
                 {/* Floating Cards */}
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl animate-bounce">
                   <div className="flex items-center space-x-2">

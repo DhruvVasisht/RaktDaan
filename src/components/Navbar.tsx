@@ -21,9 +21,12 @@ export function Navbar() {
             <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
               Donate Now
             </button>
-            <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg hover:bg-red-50 transition-colors">
+            <a
+              href="https://frontendraktdaan.vercel.app/login"
+              className="border border-red-600 text-red-600 px-4 py-2 rounded-lg hover:bg-red-50 transition-colors"
+            >
               Sign In
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -48,9 +51,13 @@ export function Navbar() {
             <button className="w-full mt-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
               Donate Now
             </button>
-            <button className="w-full mt-2 border border-red-600 text-red-600 px-4 py-2 rounded-lg hover:bg-red-50 transition-colors">
+            <a
+              href="https://frontendraktdaan.vercel.app/login"
+              target="_self"
+              className="w-full mt-2 border border-red-600 text-red-600 px-4 py-2 rounded-lg hover:bg-red-50 transition-colors text-center block"
+            >
               Sign In
-            </button>
+            </a>
           </div>
         </div>
       )}
